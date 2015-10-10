@@ -14,41 +14,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function() {
-      $('#carousel_ul li:first').before($('#carousel_ul li:last'));
-
-      $('#right_scroll img').click(function(){
-          var item_width = $('#carousel_ul li').outerWidth() + 10;
-          var left_indent = parseInt($('#carousel_ul').css('left')) - item_width;
-          $('#carousel_ul').animate({'left' : left_indent},{queue:false, duration:500},function(){
-              $('#carousel_ul li:last').after($('#carousel_ul li:first'));
-              $('#carousel_ul').css({'left' : '-210px'});
-          });
-      });
-
-      $('#left_scroll img').click(function(){
-          var item_width = $('#carousel_ul li').outerWidth() + 10;
-          var left_indent = parseInt($('#carousel_ul').css('left')) + item_width;
-
-          $('#carousel_ul').animate({'left' : left_indent},{queue:false, duration:500},function(){
-            $('#carousel_ul li:first').before($('#carousel_ul li:last'));
-            $('#carousel_ul').css({'left' : '-210px'});
-          });
+      $('.carousel').carousel({
+          interval: 2000
         });
       });
     </script>
   </head>
   <body>
-    <div id="carousel_container">
-      <div id="inner_carousel">
-        <ul id="carousel_ul">
-          <li><img src="https://i.imgur.com/e0ge0uJ.jpg" /></li>
-          <li><img src="https://i.imgur.com/JO77kLU.jpg" /></li>
-          <li><img src="https://i.imgur.com/SbnP0og.jpg" /></li>
-        </ul>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="..." alt="...">
+      <div class="carousel-caption">
+        ...
       </div>
     </div>
-    <div id="login">
-
+    <div class="item">
+      <img src="..." alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
     </div>
+    ...
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
   </body>
 </html>
