@@ -1,2 +1,2 @@
 * Friski
-** Cat Tinder
+* Cat Tinder
