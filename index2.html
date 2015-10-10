@@ -75,67 +75,28 @@
     </div>
   </div>
 
-
-  <!-- Carousel
-    ================================================== -->
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li class="" data-target="#myCarousel" data-slide-to="1"></li>
-      <li class="" data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="images/carousel/city.jpg" alt="First slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>
-              <span style="font-size: 90px; text-shadow: 2px 2px #9f9f9f;">Change the world</span>
-            </h1>
-            <p>The inpact of FutureFundr is far reaching and profound</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/carousel/saturn.png" alt="Second slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>
-              <span style="font-size: 90px; text-shadow: 2px 2px #9f9f9f;">Your Future</span>
-            </h1>
-            <p>Determine your Future score to measure your probablility of achieving your goals. Your future score is dynamic and our goal is to help you improve it.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <img src="images/carousel/mountain.jpg" alt="Third slide">
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>
-              <span style="font-size: 90px; text-shadow: 2px 2px #9f9f9f;">Philanthropy</span>
-            </h1>
-            <p>Further your own cause by investing in highly achieving individuals</p>
-          </div>
-        </div>
-      </div>
+  <div id="container">
+    <div class="col-md-6 ui-widget-content" id="draggable">
+      <img class="catpic" src="http://thecatapi.com/api/images/get?format=src&type=jpg" />
     </div>
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
   </div>
-  <!-- /.carousel -->
 
+  </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="home_files/jquery.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="home_files/bootstrap.js"></script>
   <script src="home_files/docs.js"></script>
+
+  <script>
+    $(function() {
+      $("#draggable").draggable();
+    });
+  </script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="home_files/ie10-viewport-bug-workaround.js"></script>
 
