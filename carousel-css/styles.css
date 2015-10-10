@@ -1,0 +1,14 @@
+.circular {
+	width:170px;
+	border-radius: 150px;
+    z-index:1390813;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+    margin-top:-235px;
+    position:inherit;
+}
+.pie-container{
+    margin: auto;
+    height:210px;
+    width:210px;
+}
