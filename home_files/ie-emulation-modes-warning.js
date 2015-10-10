@@ -8,7 +8,7 @@
  * details, see http://creativecommons.org/licenses/by/3.0/.
  */
 // Intended to prevent false-positive bug reports about Bootstrap not working properly in old versions of IE due to folks testing using IE's unreliable emulation modes.
-(function () {
+(function() {
   'use strict';
 
   function emulatedIEMajorVersion() {
