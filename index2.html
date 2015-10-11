@@ -33,8 +33,8 @@
 <!-- NAVBAR ================================================== -->
 
 <body>
-  <div class="container">
-<!--     <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container nav-menu-top">
+    <!--     <div class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,27 +43,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button> -->
-          <a class="navbar-brand" href="index3.html"><img src="images/menu-icon.png" height="50px" width="50px" ></a>
-        </div>
+    <a class="navbar-brand" href="index3.html">
+      <img src="images/menu-icon.png" height="50px" width="50px">
+    </a>
+  </div>
+  </div>
+  </div>
+
+  <center>
+    <div id="container">
+      <div class="ui-widget-content" id="draggable">
+        <img class="catpic img-responsive" src="http://thecatapi.com/api/images/get?format=src&type=jpg,gif&size=full">
       </div>
     </div>
+  </center>
 
-    <center>
-      <div id="container">
-        <div class="ui-widget-content" id="draggable">
-          <img class="catpic img-responsive" src="http://thecatapi.com/api/images/get?format=src&type=jpg,gif&size=full">
-        </div>
-      </div>
-    </center>
-
-    <div id="buttons">
-      <div class="disapprove">
-        <img class="img-responsive" src="images/no.png">
-      </div>
-      <div class="approve">
-        <img class="img-responsive" src="images/yes.png">
-      </div>
+  <div id="buttons">
+    <div class="disapprove">
+      <img class="img-responsive" src="images/no.png">
     </div>
+    <div class="approve">
+      <img class="img-responsive" src="images/yes.png">
+    </div>
+  </div>
   </div>
 
 
@@ -83,15 +85,19 @@
     $(document).ready(function() {
       $('.draggable').draggable();
 
-      $('.approve').on('click', function() { nextCat('approve'); });
-      $('.disapprove').on('click', function() { nextCat('disapprove'); });
+      $('.approve').on('click', function() {
+        nextCat('approve');
+      });
+      $('.disapprove').on('click', function() {
+        nextCat('disapprove');
+      });
     });
 
     function nextCat(src) {
       counter++;
       console.log(src);
       var catpic = $('.catpic');
-      if(counter%2 === 0) catpic.attr('src', 'http://thecatapi.com/api/images/get?format=src&type=gif,jpg&size=full');
+      if (counter % 2 === 0) catpic.attr('src', 'http://thecatapi.com/api/images/get?format=src&type=gif,jpg&size=full');
       else catpic.attr('src', 'http://thecatapi.com/api/images/get?format=src&type=jpg,gif&size=full');
     }
   </script>
