@@ -21,6 +21,16 @@
   width: 25%;
   margin: 0 auto;
 }
+
+.approve{
+  float: left;
+  margin: 500px;
+}
+
+.disapprove{
+  margin: 500px;
+  float: right;
+
 @keyframes slideRight {
   0% {
     background-color: red;
