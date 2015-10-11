@@ -21,15 +21,18 @@
   width: 25%;
   margin: 0 auto;
 }
-
-.approve{
+#buttons .approve {
+  float: right;
+  margin-right: 30px;
+}
+#buttons .disapprove {
   float: left;
-  margin: 500px;
+  margin-left: 30px;
 }
 
-.disapprove{
-  margin: 500px;
-  float: right;
+#buttons{
+  margin-top:20px;
+}
 
 @keyframes slideRight {
   0% {
@@ -76,13 +79,4 @@
   background-color: red;
   animation-name: slideLeft;
   animation-duration: 2s;
-}
-
-.approve{
-
-}
-
-.disapprove{
-  float:left;
-  margin-left: 55px;
 }
