@@ -84,3 +84,8 @@
   animation-name: slideLeft;
   animation-duration: 2s;
 }
+
+body{
+  background-image: url("../finalfr.PNG");
+  background-repeat: repeat;
+}
