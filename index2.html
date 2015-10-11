@@ -102,16 +102,17 @@
 
   <script type="text/javascript">
     $(function() {
-      // $('.draggable').on("swiperight", function() {
-      //   $(this).addClass('animRight');
-      // });
-      //
-      // $('.draggable').on("swipeleft", function() {
-      //   $(this).addClass('animLeft');
-      // });
-
       $('.draggable').draggable();
     });
+
+    $('.approve').on('click', nextCat('approve'));
+    $('.disapprove').on('click', nextCat('disapprove'));
+
+    function nextCat(src){
+      console.log(src);
+      var catpic = $('.catpic');
+      catpic.attr('src', 'http://thecatapi.com/api/images/get?format=src&type=jpg,gif&size=full');
+    }
   </script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="home_files/ie10-viewport-bug-workaround.js"></script>

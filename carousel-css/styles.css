@@ -34,6 +34,10 @@
   margin-top:20px;
 }
 
+#buttons img:hover{
+  cursor: pointer;
+}
+
 @keyframes slideRight {
   0% {
     background-color: red;
