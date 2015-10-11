@@ -86,6 +86,8 @@
 }
 
 body{
-  background-image: url("finalfr.PNG");
-  background-repeat: repeat;
+  background-position: center top;
+  background-image: url("space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
