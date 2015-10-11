@@ -12,13 +12,11 @@
   height: 210px;
   width: 210px;
 }
-
-.catpic{
+.catpic {
   height: 100%;
   width: 100%;
 }
-
-.catthings{
+.catthings {
   height: 25%;
   width: 25%;
   margin: 0 auto;
@@ -32,4 +30,55 @@
 .disapprove{
   margin: 500px;
   float: right;
+
+@keyframes slideRight {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: yellow;
+    left: 400px;
+    top: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+
+.animRight {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: slideRight;
+  animation-duration: 2s;
+}
+@keyframes slideLeft {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    background-color: yellow;
+    right: 400px;
+    top: 0px;
+  }
+}
+
+/* The element to apply the animation to */
+
+.animLeft {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: slideLeft;
+  animation-duration: 2s;
+}
+
+body{
+  overflow: hidden;
+>>>>>>> ad3b896b65ed5609bff1d9a996ad2a519db54d65
 }
