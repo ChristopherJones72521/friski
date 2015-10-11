@@ -1,4 +1,4 @@
-![Friskie Logo](http://getfriskie.com/images/logo.png)](http://getfriskie.com/index.html)
+![Friskie Logo](http://getfriskie.com/images/logo.png)
 
 With Friskie, you can sort through cats and cast your judgement on them with no other particular end goal in mind.
 
