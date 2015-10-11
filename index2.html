@@ -73,7 +73,7 @@
     <center>
       <div id="container">
         <div class="ui-widget-content" id="draggable">
-          <img class="catpic img-responsive" src="http://thecatapi.com/api/images/get?format=src&type=jpg,gif">
+          <img class="catpic img-responsive" src="http://thecatapi.com/api/images/get?format=src&type=jpg,gif&size=full">
         </div>
       </div>
     </center>
@@ -101,17 +101,20 @@
   <script src="home_files/docs.js"></script>
 
   <script type="text/javascript">
-    $(function() {
+    var counter = 0;
+    $(document).ready(function() {
       $('.draggable').draggable();
+
+      $('.approve').on('click', function() { nextCat('approve'); });
+      $('.disapprove').on('click', function() { nextCat('disapprove'); });
     });
 
-    $('.approve').on('click', nextCat('approve'));
-    $('.disapprove').on('click', nextCat('disapprove'));
-
-    function nextCat(src){
+    function nextCat(src) {
+      counter++;
       console.log(src);
       var catpic = $('.catpic');
-      catpic.attr('src', 'http://thecatapi.com/api/images/get?format=src&type=jpg,gif&size=full');
+      if(counter%2 === 0) catpic.attr('src', 'http://thecatapi.com/api/images/get?format=src&type=gif,jpg&size=full');
+      else catpic.attr('src', 'http://thecatapi.com/api/images/get?format=src&type=jpg,gif&size=full');
     }
   </script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
