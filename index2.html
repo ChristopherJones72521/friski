@@ -70,26 +70,37 @@
       </div>
     </div>
 
-    <center <div id="container" class="catthings">
-      <div class="ui-widget-content" id="draggable">
-        <img class="catpic img-responsive" src="http://thecatapi.com/api/images/get?format=src&type=jpg,gif">
+    <center>
+      <div id="container" class="catthings draggable">
+        <div class="ui-widget-content">
+          <img class="catpic img-responsive" src="http://thecatapi.com/api/images/get?format=src&type=jpg,gif">
+        </div>
       </div>
-  </div>
-  </center>
+    </center>
   </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script> -->
   <script src="home_files/bootstrap.js"></script>
   <script src="home_files/docs.js"></script>
 
-  <script>
+  <script type="text/javascript">
     $(function() {
-      $("#draggable").draggable();
+      $('.draggable').on("swiperight", function() {
+        $(this).addClass('animRight');
+      });
+
+      $('.draggable').on("swipeleft", function() {
+        $(this).addClass('animLeft');
+      });
+
+      $('.draggable').draggable();
     });
   </script>
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
