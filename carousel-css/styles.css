@@ -78,6 +78,11 @@
   animation-duration: 2s;
 }
 
-body{
-  overflow: hidden;
+.approve{
+
+}
+
+.disapprove{
+  float:left;
+  margin-left: 55px;
 }
