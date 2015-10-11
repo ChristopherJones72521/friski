@@ -83,15 +83,12 @@
   <script type="text/javascript">
     var counter = 0;
     $(document).ready(function() {
+      $('.draggable').draggable();
 
-      var approve = $('.approve');
-      var disapprove = $('.disapprove');
-
-      approve.on('click', function() {
+      $('.approve').on('click', function() {
         nextCat('approve');
       });
-
-      disapprove.on('click', function() {
+      $('.disapprove').on('click', function() {
         nextCat('disapprove');
       });
     });
