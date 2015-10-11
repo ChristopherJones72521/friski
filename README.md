@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 [Friskie Logo](http://getfriskie.com/images/logo.png)](http://getfriskie.com/index.html)
 
-=======
->>>>>>> 71b66e3a6825aa44b90a4e8629b8de985cc6c75a
 With Friskie, you can sort through cats and cast your judgement on them with no other particular end goal in mind.
 
 We built Friskie with the intention of using it as a system for animal adoption by the ASPCA. It would also serve as an enjoyable time killer and stress reducer.
@@ -14,7 +11,6 @@ We predict the adoption rate of Friskie would be extremely rapid. This is becaus
 We would seek to integrate paid advertising into the stream of Cats. Friskie would also donate a portion of its proceeds to benefit animal shelters.
 
 Friskie was build on a LAMP stack using the http://thecatapi.com/
-<<<<<<< HEAD
 
 Built With
 - css
@@ -27,5 +23,3 @@ Built With
 - linux
 - ubuntu
 - apache
-=======
->>>>>>> 71b66e3a6825aa44b90a4e8629b8de985cc6c75a
