@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    include ./include/head.jade
+
+  body
+    div.container
+      center
+        img.img-responsive(src="/images/logo.png" alt="Ready to Get Friskie?")
+    
+    div.container
+      div.row  
+        form.form-signin.col-xs-12.col-sm-12.col-md-6
+          h2.form-signin-heading Please sign in
+          div.email
+            label.sr-only(for="inputEmail") Email address
+            input.form-control(id="inputEmail" type="email" placeholder="Email address")
+          div.password
+            label.sr-only(for="inputPassword") Password
+            input.form-control(id="inputPassword" type="password" placeholder="Password")
+          div.remember-me
+            label(for="rememberMe") Remember Me
+            input(id="rememberMe" type="checkbox")
+      
+        button.btn.btn-lg.btn-primary.btn-block(type="submit") Sign In
+        
