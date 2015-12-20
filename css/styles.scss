@@ -1,0 +1,27 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: #eee;
+}
+.logo {
+  margin: 30px auto 0;
+}
+.form-signin {
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+  button {
+    width: 250px;
+  }
+  .email,
+  .password {
+    margin: 0 auto;
+  }
+}
